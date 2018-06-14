@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JWDIntervalButton.h"
+#import "JWDTouchAreaButton.h"
 
 @interface ViewController ()
 
@@ -28,6 +29,15 @@
     [button addTarget:self action:@selector(buttonDidClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 
+
+    JWDTouchAreaButton *touchAreaButtont = [[JWDTouchAreaButton alloc] initWithFrame:CGRectMake(100, 225, 100, 20)];
+    touchAreaButtont.titleLabel.font = [UIFont systemFontOfSize:12];
+    [touchAreaButtont setBackgroundColor:[UIColor redColor]];
+    [touchAreaButtont setTouchAreaEdgeInsets:UIEdgeInsetsMake(-100, -100, -100, -100)];
+    [touchAreaButtont setTitle:@"touchAreaButton" forState:UIControlStateNormal];
+    [touchAreaButtont addTarget:self action:@selector(touchAreaButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:touchAreaButtont];
+
 }
 
 
@@ -35,5 +45,8 @@
     NSLog(@"-----点击了");
 }
 
+- (void)touchAreaButtonDidClick {
+    NSLog(@"可以改变点击区域了");
+}
 
 @end

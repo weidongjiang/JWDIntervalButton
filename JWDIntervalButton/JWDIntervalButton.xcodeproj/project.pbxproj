@@ -16,6 +16,7 @@
 		CE4D81BD20D127D300FCBC76 /* JWDIntervalButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81BC20D127D300FCBC76 /* JWDIntervalButtonTests.m */; };
 		CE4D81C820D127D300FCBC76 /* JWDIntervalButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81C720D127D300FCBC76 /* JWDIntervalButtonUITests.m */; };
 		CE4D81D720D128F200FCBC76 /* JWDIntervalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81D620D128F200FCBC76 /* JWDIntervalButton.m */; };
+		CE4D81DA20D211D800FCBC76 /* JWDTouchAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81D920D211D800FCBC76 /* JWDTouchAreaButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		CE4D81C920D127D300FCBC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4D81D520D128F200FCBC76 /* JWDIntervalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWDIntervalButton.h; sourceTree = "<group>"; };
 		CE4D81D620D128F200FCBC76 /* JWDIntervalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDIntervalButton.m; sourceTree = "<group>"; };
+		CE4D81D820D211D800FCBC76 /* JWDTouchAreaButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWDTouchAreaButton.h; sourceTree = "<group>"; };
+		CE4D81D920D211D800FCBC76 /* JWDTouchAreaButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDTouchAreaButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				CE4D81A720D127D000FCBC76 /* ViewController.m */,
 				CE4D81D520D128F200FCBC76 /* JWDIntervalButton.h */,
 				CE4D81D620D128F200FCBC76 /* JWDIntervalButton.m */,
+				CE4D81D820D211D800FCBC76 /* JWDTouchAreaButton.h */,
+				CE4D81D920D211D800FCBC76 /* JWDTouchAreaButton.m */,
 				CE4D81A920D127D000FCBC76 /* Main.storyboard */,
 				CE4D81AC20D127D200FCBC76 /* Assets.xcassets */,
 				CE4D81AE20D127D200FCBC76 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 				CE4D81D720D128F200FCBC76 /* JWDIntervalButton.m in Sources */,
 				CE4D81A820D127D000FCBC76 /* ViewController.m in Sources */,
 				CE4D81B320D127D200FCBC76 /* main.m in Sources */,
+				CE4D81DA20D211D800FCBC76 /* JWDTouchAreaButton.m in Sources */,
 				CE4D81A520D127D000FCBC76 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
