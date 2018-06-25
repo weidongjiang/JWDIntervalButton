@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE401F6020E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = CE401F5F20E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.m */; };
 		CE4D81A520D127D000FCBC76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81A420D127D000FCBC76 /* AppDelegate.m */; };
 		CE4D81A820D127D000FCBC76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4D81A720D127D000FCBC76 /* ViewController.m */; };
 		CE4D81AB20D127D000FCBC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4D81A920D127D000FCBC76 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE401F5E20E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+layoutButtonWithEdgeInsets.h"; sourceTree = "<group>"; };
+		CE401F5F20E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+layoutButtonWithEdgeInsets.m"; sourceTree = "<group>"; };
 		CE4D81A020D127D000FCBC76 /* JWDIntervalButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWDIntervalButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4D81A320D127D000FCBC76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE4D81A420D127D000FCBC76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		CE4D819720D127D000FCBC76 = {
 			isa = PBXGroup;
 			children = (
+				CE401F5E20E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.h */,
+				CE401F5F20E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.m */,
 				CE4D81A220D127D000FCBC76 /* JWDIntervalButton */,
 				CE4D81BB20D127D300FCBC76 /* JWDIntervalButtonTests */,
 				CE4D81C620D127D300FCBC76 /* JWDIntervalButtonUITests */,
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE401F6020E0BEAA004C36A9 /* UIButton+layoutButtonWithEdgeInsets.m in Sources */,
 				CE4D81D720D128F200FCBC76 /* JWDIntervalButton.m in Sources */,
 				CE4D81A820D127D000FCBC76 /* ViewController.m in Sources */,
 				CE4D81B320D127D200FCBC76 /* main.m in Sources */,

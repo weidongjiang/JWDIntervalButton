@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JWDIntervalButton.h"
 #import "JWDTouchAreaButton.h"
+#import "UIButton+layoutButtonWithEdgeInsets.h"
 
 @interface ViewController ()
 
@@ -37,6 +38,49 @@
     [touchAreaButtont setTitle:@"touchAreaButton" forState:UIControlStateNormal];
     [touchAreaButtont addTarget:self action:@selector(touchAreaButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:touchAreaButtont];
+
+
+    [self setLayoutButtonWithEdgeInsets];
+
+}
+
+- (void)setLayoutButtonWithEdgeInsets {
+
+    JWDTouchAreaButton *arrowButtont = [[JWDTouchAreaButton alloc] initWithFrame:CGRectMake(10, 325, 60, 60)];
+    arrowButtont.titleLabel.font = [UIFont systemFontOfSize:12];
+    [arrowButtont setBackgroundColor:[UIColor whiteColor]];
+    [arrowButtont setImage:[UIImage imageNamed:@"arrowimage"] forState:UIControlStateNormal];
+    [arrowButtont setTitle:@"返回" forState:UIControlStateNormal];
+    [arrowButtont setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [arrowButtont jwd_layoutButtonWithEdgeInsetsStyle:JWDButtonEdgeInsetsStyleImageTop imageTitlespace:10];
+    [self.view addSubview:arrowButtont];
+
+    JWDTouchAreaButton *arrowButtont_1 = [[JWDTouchAreaButton alloc] initWithFrame:CGRectMake(80, 325, 60, 60)];
+    arrowButtont_1.titleLabel.font = [UIFont systemFontOfSize:12];
+    [arrowButtont_1 setBackgroundColor:[UIColor whiteColor]];
+    [arrowButtont_1 setImage:[UIImage imageNamed:@"arrowimage"] forState:UIControlStateNormal];
+    [arrowButtont_1 setTitle:@"返回" forState:UIControlStateNormal];
+    [arrowButtont_1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [arrowButtont_1 jwd_layoutButtonWithEdgeInsetsStyle:JWDButtonEdgeInsetsStyleImageBottom imageTitlespace:10];
+    [self.view addSubview:arrowButtont_1];
+
+    JWDTouchAreaButton *arrowButtont_2 = [[JWDTouchAreaButton alloc] initWithFrame:CGRectMake(150, 325, 60, 60)];
+    arrowButtont_2.titleLabel.font = [UIFont systemFontOfSize:12];
+    [arrowButtont_2 setBackgroundColor:[UIColor whiteColor]];
+    [arrowButtont_2 setImage:[UIImage imageNamed:@"arrowimage"] forState:UIControlStateNormal];
+    [arrowButtont_2 setTitle:@"返回" forState:UIControlStateNormal];
+    [arrowButtont_2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [arrowButtont_2 jwd_layoutButtonWithEdgeInsetsStyle:JWDButtonEdgeInsetsStyleImageLeft imageTitlespace:10];
+    [self.view addSubview:arrowButtont_2];
+
+    JWDTouchAreaButton *arrowButtont_3 = [[JWDTouchAreaButton alloc] initWithFrame:CGRectMake(220, 325, 60, 60)];
+    arrowButtont_3.titleLabel.font = [UIFont systemFontOfSize:12];
+    [arrowButtont_3 setBackgroundColor:[UIColor whiteColor]];
+    [arrowButtont_3 setImage:[UIImage imageNamed:@"arrowimage"] forState:UIControlStateNormal];
+    [arrowButtont_3 setTitle:@"返回" forState:UIControlStateNormal];
+    [arrowButtont_3 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [arrowButtont_3 jwd_layoutButtonWithEdgeInsetsStyle:JWDButtonEdgeInsetsStyleImageRight imageTitlespace:10];
+    [self.view addSubview:arrowButtont_3];
 
 }
 
